@@ -49,22 +49,27 @@ export default function SUVsPage() {
 
             <div className="grid gap-6">
               {suvs.map((suv) => (
-                <ProductCard key={suv.rank} car={{
-                  rank: suv.rank,
-                  name: suv.name,
-                  brand: suv.brand,
-                  price: suv.price,
-                  score: suv.score,
-                  rating: suv.rating,
-                  bodyType: 'SUV',
-                  fuelType: suv.fuelType,
-                  transmission: suv.transmission,
-                  mileage: suv.mileage,
-                  power: suv.seating,
-                  bootSpace: suv.bootSpace,
-                  pros: suv.pros,
-                  cons: suv.cons,
-                }} />
+                <ProductCard
+                  key={suv.rank}
+                  car={{
+                    rank: suv.rank,
+                    name: suv.name,
+                    brand: suv.brand,
+                    price: suv.price,
+                    score: suv.score,
+                    rating: suv.rating,
+                    bodyType: 'SUV',
+                    fuelType: suv.fuelType,
+                    transmission: suv.transmission,
+                    mileage: suv.mileage,
+                    power: (suv as any).power ?? '— PS',
+                    powerBhp: (suv as any).powerBhp ?? '— bhp',
+                    engineOptions: (suv as any).engineOptions ?? [],
+                    bootSpace: suv.bootSpace,
+                    pros: suv.pros,
+                    cons: suv.cons,
+                  }}
+                />
               ))}
             </div>
           </div>

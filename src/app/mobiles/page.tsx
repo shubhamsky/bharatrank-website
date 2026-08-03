@@ -51,22 +51,27 @@ export default function MobilesPage() {
 
             <div className="grid gap-6">
               {mobiles.map((mobile) => (
-                <ProductCard key={mobile.rank} car={{
-                  rank: mobile.rank,
-                  name: mobile.name,
-                  brand: mobile.brand,
-                  price: mobile.price,
-                  score: mobile.score,
-                  rating: mobile.rating,
-                  bodyType: 'Smartphone',
-                  fuelType: mobile.ram,
-                  transmission: mobile.storage,
-                  mileage: mobile.battery,
-                  power: mobile.camera,
-                  bootSpace: mobile.display,
-                  pros: mobile.pros,
-                  cons: mobile.cons,
-                }} />
+                <ProductCard
+                  key={mobile.rank}
+                  car={{
+                    rank: mobile.rank,
+                    name: mobile.name,
+                    brand: mobile.brand,
+                    price: mobile.price,
+                    score: mobile.score,
+                    rating: mobile.rating,
+                    bodyType: 'Smartphone',
+                    fuelType: mobile.ram,
+                    transmission: mobile.storage,
+                    mileage: mobile.battery,
+                    power: mobile.camera,
+                    powerBhp: '— bhp',
+                    engineOptions: [],
+                    bootSpace: mobile.display,
+                    pros: mobile.pros,
+                    cons: mobile.cons,
+                  }}
+                />
               ))}
             </div>
           </div>
