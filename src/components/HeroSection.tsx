@@ -56,28 +56,35 @@ export function HeroSection() {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="relative flex h-full items-center justify-center rounded-[2rem] bg-gradient-to-br from-slate-900 via-navy to-slate-800 p-8 shadow-soft"
+          className="relative flex h-full items-center justify-center rounded-[2rem] bg-slate-950/95 p-8 shadow-soft"
         >
-          <div className="relative h-[420px] w-full rounded-[2rem] border border-white/10 bg-slate-950/90 p-6 shadow-2xl">
-            <div className="absolute -left-8 top-10 hidden h-24 w-24 rounded-full bg-saffron/20 blur-3xl md:block" />
-            <div className="absolute -right-8 bottom-10 hidden h-24 w-24 rounded-full bg-brandgreen/20 blur-3xl md:block" />
-            <div className="relative h-full rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6 text-white">
-              <div className="flex items-center justify-between rounded-3xl bg-slate-900/80 px-4 py-3 text-sm">
-                <span>Ranking preview</span>
-                <span className="rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-slate-200">Live</span>
+          <div className="relative w-full rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 text-white shadow-2xl">
+            <div className="absolute -left-8 top-12 hidden h-28 w-28 rounded-full bg-saffron/20 blur-3xl md:block" />
+            <div className="absolute -right-8 bottom-12 hidden h-28 w-28 rounded-full bg-brandgreen/20 blur-3xl md:block" />
+            <div className="relative space-y-8">
+              <div className="rounded-[1.8rem] border border-white/10 bg-slate-950/90 p-8 shadow-inner">
+                <p className="text-sm uppercase tracking-[0.3em] text-saffron">Launch Focus</p>
+                <h3 className="mt-4 text-3xl font-semibold text-white">Top 10 cars under ₹10 Lakh</h3>
+                <p className="mt-4 max-w-xl text-slate-300">
+                  A clean, expert-curated ranking for India’s most reliable budget cars, delivered with practical insights and verified engine performance data.
+                </p>
               </div>
-              <div className="mt-8 space-y-5">
-                <div className="rounded-3xl border border-slate-800 bg-slate-950/90 p-5 shadow-inner">
-                  <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Top category</p>
-                  <h3 className="mt-2 text-xl font-semibold">Cars under ₹10 Lakh</h3>
-                  <p className="mt-2 text-sm text-slate-400">The most trusted rating list for budget families.</p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Why it matters</p>
+                  <p className="mt-3 text-lg font-semibold text-white">Decision-ready guidance for first-time car buyers.</p>
                 </div>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  {['Sedan', 'SUV', 'Hatchback', 'Compact'].map((item) => (
-                    <div key={item} className="rounded-3xl border border-slate-800 bg-slate-900/85 p-4 text-sm text-slate-300">
-                      {item}
-                    </div>
-                  ))}
+                <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-400">What’s included</p>
+                  <p className="mt-3 text-lg font-semibold text-white">Real market trends, power & BHP details, and pros/cons for every model.</p>
+                </div>
+                <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Trusted process</p>
+                  <p className="mt-3 text-lg font-semibold text-white">Made for India with verified pricing and segment-relevant recommendations.</p>
+                </div>
+                <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Coming soon</p>
+                  <p className="mt-3 text-lg font-semibold text-white">Mobiles, laptops, TVs, and insurance rankings next.</p>
                 </div>
               </div>
             </div>

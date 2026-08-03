@@ -36,7 +36,9 @@ export default function Under10LakhPage() {
         <div className="mx-auto max-w-[1200px] px-6 sm:px-8 lg:px-12">
           <p className="text-sm uppercase tracking-[0.3em] text-saffron">Ranking</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Top 10 Cars Under ₹10 Lakh</h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">A curated list of the best budget cars in India, ranked for safety, ownership cost and driving comfort.</p>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+            A curated list of the best budget cars in India, ranked for safety, ownership cost and driving comfort.
+          </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <div className="rounded-3xl bg-slate-900/90 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-saffron">Last Updated</p>
@@ -47,8 +49,8 @@ export default function Under10LakhPage() {
               <p className="mt-3 text-2xl font-semibold">{details.overallScore}/100</p>
             </div>
             <div className="rounded-3xl bg-slate-900/90 p-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-saffron">Category</p>
-              <p className="mt-3 text-2xl font-semibold">Budget Cars</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-saffron">Focus</p>
+              <p className="mt-3 text-2xl font-semibold">Top budget cars</p>
             </div>
           </div>
         </div>
